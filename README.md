@@ -9,9 +9,9 @@ running = True
 
 def jiggle():
     while running:
-        x, y = pyautogui.position()
-        pyautogui.moveRel(2, 0, duration=0.1)
-        pyautogui.moveRel(-2, 0, duration=0.1)
+        pyautogui.moveRel(10, 0, duration=0)
+        time.sleep(0.2)
+        pyautogui.moveRel(-10, 0, duration=0)
         time.sleep(30)  # espera 30 segundos entre cada movimiento
 
 def wait_for_stop():
